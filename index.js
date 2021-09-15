@@ -4,10 +4,10 @@ const fs = require('fs');
 
 try {
     // path input defined in action metadata file
-    const pathToBuildsIndex = core.getInput('pathToBuildsIndex');
-    console.log(`Got path to builds index as ${pathToBuildsIndex}!`);
+    const path = core.getInput('path');
+    console.log(`Got path to builds index as ${path}!`);
     
-    fs.readFile(pathToBuildsIndex, "utf8", (err, jsonString) => {
+    fs.readFile(path, "utf8", (err, jsonString) => {
         if (err) {
             console.log("Error reading file from disk:", err);
             return;

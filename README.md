@@ -4,7 +4,7 @@ This action returns the latest version in a Builds Index file as a string when u
 
 ## Inputs
 
-## `pathToBuildsIndex`
+## `path`
 
 The path to the actual builds_index.json file, defaults to "PATCHWorkspace/Builds/builds_index.json"
 
@@ -16,7 +16,7 @@ The latest version found, as a string
 
 ## Example usage
 ```
-uses: actions/PATCH-get-build-version@v0.1
+uses: actions/PATCH-get-build-version@v0.2
 with:
-    pathToBuildsIndex: 'PATCHWorkspace/Builds/builds_index.json'
+    path: 'PATCHWorkspace/Builds/builds_index.json'
 ```
