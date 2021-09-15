@@ -15,7 +15,8 @@ The path to the actual builds_index.json file, defaults to "PATCHWorkspace/Build
 The latest version found, as a string
 
 ## Example usage
-
-uses: actions/get-latest-version-from-patch-build-index@v0.1
+```
+uses: actions/PATCH-get-build-version@v0.1
 with:
     pathToBuildsIndex: 'PATCHWorkspace/Builds/builds_index.json'
+```
