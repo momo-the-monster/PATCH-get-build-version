@@ -5,7 +5,7 @@ const fs = require('fs');
 try {
     // path input defined in action metadata file
     const path = core.getInput('path');
-    console.log(`Got path to builds index as ${path}!`);
+    console.log(`Got path to builds index as ${path}`);
     
     fs.readFile(path, "utf8", (err, jsonString) => {
         if (err) {
