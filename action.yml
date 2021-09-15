@@ -1,0 +1,13 @@
+﻿name: 'Get PATCH Build Version'
+description: 'Get the latest version in PATCH Builds Index'
+inputs:
+  pathToBuildsIndex:  # id of input
+    description: 'Path to Builds Index'
+    required: false
+    default: 'PATCHWorkspace/Builds/builds_index.json'
+outputs:
+  version: # id of output
+    description: 'The latest version found'
+runs:
+  using: 'node12'
+  main: 'index.js'
