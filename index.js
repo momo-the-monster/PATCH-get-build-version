@@ -21,7 +21,7 @@ try {
             const latestVersion = builds[builds.length-1];
             console.log(`latest build version is ${latestVersion}`);
             
-            const nextPatchVersion = semver.inc(latestVersion, patch);
+            const nextPatchVersion = semver.inc(latestVersion, "patch");
             console.log(`next patch version will be ${nextPatchVersion}`);
             
             core.setOutput("version", latestVersion);

@@ -16,7 +16,7 @@ The latest version found, as a string
 
 ## Example usage
 ```
-uses: actions/PATCH-get-build-version@v0.2
+uses: actions/PATCH-get-build-version@v0.3
 with:
     path: 'PATCHWorkspace/Builds/builds_index.json'
 ```
